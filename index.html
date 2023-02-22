@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Calculator</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
 <style>
   .calculator {
@@ -72,33 +73,12 @@
     </div>
   </div>
 
-  <script>
-    let expression = "";
+  <!-- <script src="./script.js">
 
-    function insert(char) {
-      expression += char;
-      document.getElementById("result").value = expression;
-    }
+  </script> -->
 
-    function clearResult() {
-      expression = "";
-      document.getElementById("result").value = "";
-    }
+  <script src="./script-no-eval.js">
 
-    function backspace() {
-      expression = expression.slice(0, -1);
-      document.getElementById("result").value = expression;
-    }
-
-    function calculate() {
-      try {
-        let result = eval(expression);
-        document.getElementById("result").value = result;
-        expression = "";
-      } catch (error) {
-        document.getElementById("result").value = "Error";
-      }
-    }
   </script>
 </body>
 
